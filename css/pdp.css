@@ -1,0 +1,298 @@
+.pdp-section {
+  width: 100%;
+}
+
+.pdp-breadcrumb {
+  font-size: 14px;
+  color: #555;
+  margin: 20px 0 25px 100px;
+}
+
+.pdp-breadcrumb span {
+  font-weight: 600;
+  color: #000;
+}
+
+.breadcrumb-link {
+  color: #555;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+#pdp-wrapper {
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.pdp-left {
+  width: 30%;
+}
+
+.pdp-gallery {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pdp-main-img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border: 2px solid #b9b9b9;
+}
+
+.pdp-thumbs {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.pdp-thumbs .thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+.pdp-thumbs .thumb:hover {
+  border-color: #000;
+}
+
+.pdp-thumbs .thumb.active {
+  border: 2px solid #000;
+}
+
+.pdp-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#pdp-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pdp-price-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price-current {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.price-old {
+  font-size: 24px;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.pdp-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 18px;
+}
+
+.stars img {
+  width: 18px;
+  height: 18px;
+}
+
+.reviews-count {
+  border-left: 2px solid #777575;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.pdp-short-desc {
+  padding: 0 30px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.pdp-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #000;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.btn.add-to-cart:hover {
+  background: #eeeeee;
+}
+
+.btn.buy-now {
+  background: #000;
+  color: white;
+}
+
+.btn.buy-now:hover {
+  background: #222;
+}
+
+.pdp-meta {
+  margin-top: 10px;
+}
+
+.wishlist-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.wishlist-btn .wishlist-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.share {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.pdp-tabs {
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 50px;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.tab-btn {
+  background: none;
+  padding: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #666;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.tab-panel {
+  display: none;
+  padding: 20px 150px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.pdp-footer {
+  width: 100%;
+  background: #f1f8f6;
+}
+
+.pdp-footer-top {
+  display: flex;
+  gap: 100px;
+  padding: 40px 80px;
+  background: #f1f8f6;
+}
+
+.footer-links-left,
+.footer-links-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-left a,
+.footer-links-right a {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-links-left p,
+.footer-links-right p {
+  color: #0c3322;
+  font-weight: 600;
+}
+
+.footer-payments {
+  align-items: flex-end;
+}
+
+.footer-payments img {
+  width: 180px;
+}
+
+.pdp-footer-bottom {
+  background: #093624;
+  padding: 18px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social img {
+  width: 22px;
+}
+
+.footer-copy {
+  color: white;
+  font-size: 14px;
+}

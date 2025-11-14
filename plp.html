@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products – Abokichi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/plp.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Mini Header -->
+      <div class="mini-header">
+        <div class="mini-header-left">
+          <div class="currency-container">
+            <div class="currency">USD</div>
+            <img
+              src="assets/icons/down_arrow_icon.svg"
+              class="arrow-icon"
+              alt=""
+            />
+          </div>
+
+          <div class="stores-container">
+            <img src="assets/location-pin.png" class="location-icon" alt="" />
+            <div class="stores">Stores</div>
+          </div>
+        </div>
+
+        <div class="mini-header-right">
+          <a href="#" class="login-register">Login / Register</a>
+        </div>
+      </div>
+
+      <!-- Main Header -->
+      <div class="main-header">
+        <div class="header-left">
+          <a href="index.html">
+            <img src="assets/hp-logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+
+        <nav class="header-nav">
+          <a href="#"
+            >Shop <img src="assets/icons/black-down-arrow-icon.svg" alt=""
+          /></a>
+          <a href="#">Our story</a>
+          <a href="#">Recipes</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+          <img src="assets/icons/search_icon.svg" class="icon" alt="" />
+          <img src="assets/icons/wishlist-icon.svg" class="icon" alt="" />
+          <div class="cart-wrapper">
+            <img src="assets/icons/bag_shopping_icon.svg" class="icon" alt="" />
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="plp-section">
+        <div class="plp-banner">
+          <img
+            src="assets/images/plp/banner.png"
+            class="plp-banner-img"
+            alt=""
+          />
+          <div class="plp-banner-text">PRODUCTS</div>
+        </div>
+
+        <div class="plp-body">
+          <div class="plp-count-container">
+            Products <span class="plp-count">(12)</span>
+          </div>
+
+          <div class="plp-filter-bar">
+            <div class="left-controls">
+              <button class="filter-btn">
+                <img src="assets/icons/filter-icon.svg" alt="" />
+                FILTER
+              </button>
+
+              <div class="plp-view-icons">
+                <img
+                  src="assets/icons/grid-icon.png"
+                  class="view-icon active grid-icon"
+                  alt=""
+                />
+                <img
+                  src="assets/icons/list-icon.png"
+                  class="view-icon list-icon"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="right-controls">
+              <label class="sort-label">Sort By:</label>
+              <div class="sort-select-wrapper">
+                <select class="sort-dropdown" id="sortDropdown">
+                  <option value="az" selected>A-Z</option>
+                  <option value="za">Z-A</option>
+                  <option value="low-high">Price Low to High</option>
+                  <option value="high-low">Price High to Low</option>
+                </select>
+
+                <img
+                  src="assets/icons/down_arrow_icon.svg"
+                  class="sort-arrow"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- PLP Filter Dropdown -->
+          <div class="plp-filter-panel" id="plpFilterPanel">
+            <div class="filter-section">
+              <h4>Categories</h4>
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Chili oil/Okazu"
+                />
+                Chili oil/Okazu</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Miso Soup"
+                />
+                Miso Soup</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Instant Matcha"
+                />
+                Instant Matcha</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Coffee"
+                />
+                Coffee</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Greeting Card"
+                />
+                Greeting Card</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-category"
+                  value="Coming Soon"
+                />
+                Coming Soon</label
+              >
+            </div>
+
+            <div class="filter-section">
+              <h4>Type</h4>
+              <label
+                ><input
+                  type="checkbox"
+                  class="filter-type"
+                  value="Single Pack"
+                />
+                Single Pack</label
+              >
+              <label
+                ><input type="checkbox" class="filter-type" value="Multi Set" />
+                Multi Set</label
+              >
+            </div>
+
+            <div class="filter-section">
+              <h4>Rating</h4>
+
+              <label
+                ><input type="checkbox" class="filter-rating" value="5" /> 5
+                Stars</label
+              >
+              <label
+                ><input type="checkbox" class="filter-rating" value="4" /> 4
+                Stars & Up</label
+              >
+              <label
+                ><input type="checkbox" class="filter-rating" value="3" /> 3
+                Stars & Up</label
+              >
+              <label
+                ><input type="checkbox" class="filter-rating" value="2" /> 2
+                Stars & Up</label
+              >
+              <label
+                ><input type="checkbox" class="filter-rating" value="1" /> 1
+                Star & Up</label
+              >
+            </div>
+
+            <div class="filter-section">
+              <h4>Flavours</h4>
+            </div>
+          </div>
+
+          <hr class="plp-separator" />
+
+          <!-- PLP Product Grid -->
+          <div class="plp-grid">
+            <!-- Product cards will be injected here by plp.js -->
+          </div>
+          <p class="plp-empty-msg">
+            No products found for the selected filters :(
+          </p>
+        </div>
+
+        <!-- PLP Footer -->
+        <footer class="plp-footer">
+          <div class="plp-footer-top">
+            <div class="footer-links-left">
+              <p>LINKS</p>
+              <a href="#">About us</a>
+              <a href="#">Contact us</a>
+              <a href="#">Customer Service</a>
+              <a href="#">FAQs</a>
+              <a href="#">Sitemap</a>
+            </div>
+
+            <div class="footer-links-right">
+              <p>INFORMATION</p>
+              <a href="#">Terms of Service</a>
+              <a href="#">Refund policy</a>
+              <a href="#">Press</a>
+            </div>
+
+            <div class="footer-payments">
+              <img src="assets/images/home/payment-img.png" alt="payments" />
+            </div>
+          </div>
+
+          <div class="plp-footer-bottom">
+            <div class="footer-social">
+              <img src="assets/icons/facebook-icon.svg" alt="" />
+              <img src="assets/icons/twitter-icon.svg" alt="" />
+              <img src="assets/icons/instagram-icon.svg" alt="" />
+              <img src="assets/icons/yt-icon.svg" alt="" />
+            </div>
+
+            <div class="footer-copy">© 2021 Abokichi.</div>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+  <script src="js/data.js"></script>
+  <script src="js/plp.js"></script>
+  <script src="js/cart.js"></script>
+</html>
